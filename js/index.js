@@ -10,7 +10,7 @@ let text = `Copyright © ${year} by AG Kaizen Group | All Rights Reserved.`;
 copyright.textContent = text;
 
 menu.onclick = () => {
-    menu.classList.toggle("bx-x");
+    menu.classList.toggle("fa-x");
     navbar.classList.toggle("active");
 };
 
@@ -26,13 +26,13 @@ window.onscroll = () => {
         if (top >= offset && top < offset + height) {
             navlinks.forEach(navlink => {
                 navlink.classList.remove("active");
-                document.querySelector("header nav a[href*=" + id + "]").classList.add("active");
+                document.querySelector(`header nav a[href*=${id}]`).classList.add("active");
             });
         };
 
     });
 
-    menu.classList.remove("bx-x");
+    menu.classList.remove("fa-x");
     navbar.classList.remove("active");
 
 };
