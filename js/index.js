@@ -4,6 +4,11 @@ let navbar = document.querySelector(".header-navbar");
 let sections = document.querySelectorAll("section");
 let navlinks = document.querySelectorAll("header nav a");
 
+let copyright = document.getElementById("copyright");
+let year = new Date().getFullYear();
+let text = `Copyright © ${year} by AG Kaizen Group | All Rights Reserved.`;
+copyright.textContent = text;
+
 menu.onclick = () => {
     menu.classList.toggle("bx-x");
     navbar.classList.toggle("active");
