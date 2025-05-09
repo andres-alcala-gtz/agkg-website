@@ -1,18 +1,29 @@
+// navbar
+
 let menu = document.querySelector("#header-menu");
 let navbar = document.querySelector(".header-navbar");
 
 let sections = document.querySelectorAll("section");
 let navlinks = document.querySelectorAll("header nav a");
 
+// copyright
+
 let copyright = document.getElementById("copyright");
-let year = new Date().getFullYear();
-let text = `Copyright © ${year} by AG Kaizen Group | All Rights Reserved.`;
-copyright.textContent = text;
+
+if (copyright) {
+    let year = new Date().getFullYear();
+    let text = `Copyright © ${year} by AG Kaizen Group | All Rights Reserved.`;
+    copyright.textContent = text;
+};
+
+// menu
 
 menu.onclick = () => {
     menu.classList.toggle("fa-x");
     navbar.classList.toggle("active");
 };
+
+// scroll
 
 window.onscroll = () => {
 
