@@ -137,6 +137,33 @@ span {
     margin: 2rem 0 3rem;
 }
 
+/* policy */
+
+.policy {
+    gap: 2rem;
+    padding-bottom: 6rem;
+    display: flex;
+    text-align: left;
+    align-items: normal;
+    flex-direction: column;
+    justify-content: left;
+    background: var(--color-bg2);
+}
+
+.policy-title h1 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+
+.policy-content h2 {
+    font-size: 2.6rem;
+}
+
+.policy-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
 /* services */
 
 .services {
