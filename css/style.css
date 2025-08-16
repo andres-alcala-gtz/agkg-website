@@ -164,6 +164,10 @@ span {
     margin: 2rem 0 3rem;
 }
 
+.policy-content a {
+    color: var(--color-main);
+}
+
 /* services */
 
 .services {
